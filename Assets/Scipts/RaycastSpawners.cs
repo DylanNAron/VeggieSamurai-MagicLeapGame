@@ -8,6 +8,7 @@ public class RaycastSpawners : MonoBehaviour
     public Transform ctransform; // Controllers transform
     public GameObject prefab;    // Cube prefab
     private MLInput.Controller _controller;
+    public GameObject spawners;
 
 
     // Use this for initialization
@@ -52,7 +53,8 @@ public class RaycastSpawners : MonoBehaviour
     private IEnumerator NormalMarker(Vector3 point, Vector3 normal)
     {
         Quaternion rotation = Quaternion.FromToRotation(Vector3.up, normal);
-        GameObject go = Instantiate(prefab, point, rotation);
+        GameObject spawnPoint = Instantiate(prefab, point, rotation);
+        spawnPoint.transform.parent = spawners.transform;
         yield return new WaitForSeconds(2);
         //Destroy(go);
     }
