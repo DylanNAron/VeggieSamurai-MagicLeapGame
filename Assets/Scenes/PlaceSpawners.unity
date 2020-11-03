@@ -1558,6 +1558,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawners: {fileID: 63014221}
+  spawnerUI: {fileID: 402879931}
+  spawnerRaycastvisualizer: {fileID: 234904008}
 --- !u!1 &1734083945
 GameObject:
   m_ObjectHideFlags: 0

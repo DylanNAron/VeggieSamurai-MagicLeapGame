@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ControlRaycast.unity
+    path: Assets/Scenes/PlaceSpawners.unity
     guid: ad5f1ee781d4e45f69edad4a4f891690
   - enabled: 1
     path: Assets/Scenes/VeggieSamurai.unity

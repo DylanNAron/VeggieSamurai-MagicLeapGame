@@ -9,10 +9,14 @@ public class ButtonsUI : MonoBehaviour
     public GameObject spawners;
     private AsyncOperation sceneAsync;
 
+    public GameObject spawnerUI;
+    public GameObject spawnerRaycastvisualizer;
+
     public void SpawnerPlaceStart()
     {
         Debug.Log("Start");
-        StartCoroutine(loadScene(1));
+        //StartCoroutine(loadScene(1));
+        SceneManager.LoadScene(1);
     }
 
     IEnumerator loadScene(int index)
@@ -33,8 +37,11 @@ public class ButtonsUI : MonoBehaviour
     void OnFinishedLoadingAllScene()
     {
         Debug.Log("Done Loading Scene");
-        enableScene(2);
+        enableScene(1);
+        //SceneManager.UnloadScene(0);
         Debug.Log("Scene Activated!");
+       // spawnerUI.SetActive(false);
+        //spawnerRaycastvisualizer.SetActive(false);
     }
 
     void enableScene(int index)
@@ -49,6 +56,7 @@ public class ButtonsUI : MonoBehaviour
             Debug.Log("Scene is Valid");
             SceneManager.MoveGameObjectToScene(spawners, sceneToLoad);
             SceneManager.SetActiveScene(sceneToLoad);
+            SceneManager.UnloadScene(0);
         }
     }
 }
