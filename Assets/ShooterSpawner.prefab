@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 722126352399440079}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5144967935618646181
 Transform:
   m_ObjectHideFlags: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680776154906324678}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b7c7af48aba848a8a133e89d0000295, type: 3}
   m_Name: 
@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 3961961442604343159}
   - component: {fileID: 7652601318358384267}
   - component: {fileID: 9207775191165582377}
+  - component: {fileID: 5876114013969964480}
   m_Layer: 0
   m_Name: ShooterSpawner
   m_TagString: Untagged
@@ -141,3 +142,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5876114013969964480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7302943239424496403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cd288a671e7485abbfbe01f6dc5d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
