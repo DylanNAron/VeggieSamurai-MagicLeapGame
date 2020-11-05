@@ -46,7 +46,7 @@ MonoBehaviour:
   vegetable: {fileID: 1416883380620996039, guid: 46032acc376c24c6a970c1dde4be2f38,
     type: 3}
   timeBtwSpawn: 5
-  speed: 1
+  speed: 3
 --- !u!1 &7302943239424496403
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 5876114013969964480}
   m_Layer: 0
   m_Name: ShooterSpawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

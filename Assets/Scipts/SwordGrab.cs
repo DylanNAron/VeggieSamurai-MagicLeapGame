@@ -8,10 +8,10 @@ public class SwordGrab : MonoBehaviour
 	public GameObject controller;
 	private GameObject[] spawners;
 
-    private void Start()
+    void Start()
     {
 		spawners = GameObject.FindGameObjectsWithTag("Spawner");
-
+		Debug.Log(spawners);
 	}
 
 	void OnTriggerEnter(Collider collider) {
@@ -28,12 +28,13 @@ public class SwordGrab : MonoBehaviour
 			//Disable UI
 			grabSwordUI.SetActive(false);
 
-
+			Debug.Log(spawners);
 			//Start Spawners
-			spawners = GameObject.FindGameObjectsWithTag("Spawner");
-			foreach(GameObject spawner in spawners)
+			//spawners = GameObject.FindGameObjectsWithTag("Spawner");
+			foreach (GameObject spawner in spawners)
             {
 				spawner.SetActive(true);
+				spawner.transform.GetChild(0).gameObject.SetActive(true);
 				Debug.Log("spawner activated");
             }
 		}

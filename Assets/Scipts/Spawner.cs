@@ -20,8 +20,8 @@ public class Spawner : MonoBehaviour
     	if(startTimeBtwSpawn + timeBtwSpawn <= Time.time){
 
     		GameObject obj = (GameObject)Instantiate(vegetable, transform.position, Quaternion.identity);
-            //Vector3 dir = (camera.transform.position - transform.position).normalized;
-            Vector3 dir = Vector3.forward;
+            Vector3 dir = (Camera.main.transform.position - transform.position).normalized;
+            //Vector3 dir = Vector3.forward;
 
             obj.GetComponentInChildren<Rigidbody>().AddForce(speed * dir, ForceMode.VelocityChange);
     		startTimeBtwSpawn = Time.time;
