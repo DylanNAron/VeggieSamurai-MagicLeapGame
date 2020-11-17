@@ -55,7 +55,7 @@ public class ScoreManager : MonoBehaviour
 
                 foreach (GameObject spawner in spawners)
                 {
-                    spawner.SetActive(false);
+                    //spawner.SetActive(false);
                     spawner.transform.GetChild(0).gameObject.SetActive(false);
                     Debug.Log("spawner deactivated");
                 }
