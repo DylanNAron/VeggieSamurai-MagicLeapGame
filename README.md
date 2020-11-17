@@ -1,8 +1,8 @@
-# Magic Leap Unity Project Template
+# Magic Leap Unity Project - Veggie Samurai
 
 ## Project
 
-Hello, Cube!
+Veggie Samurai
 
 ## Versions
 
