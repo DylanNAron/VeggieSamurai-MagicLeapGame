@@ -19,10 +19,13 @@ public class SwordGrab : MonoBehaviour
 		if(collider.gameObject.tag == "Sword") {
 			//attach
 			Debug.Log("Sword Grabbed");
+			/*
 			collider.gameObject.transform.parent = gameObject.transform;
 			collider.gameObject.transform.rotation = gameObject.transform.rotation * Quaternion.Euler(90, 0, 0);
-			//Quaternion.Euler(tiltAroundX, 0, tiltAroundZ);
+			*/
 
+			collider.gameObject.transform.parent = controller.transform;
+			collider.gameObject.transform.rotation = controller.transform.rotation * Quaternion.Euler(180, 0, 0);
 
 
 			//Disable UI

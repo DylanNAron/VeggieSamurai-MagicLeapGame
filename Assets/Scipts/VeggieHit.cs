@@ -10,8 +10,11 @@ public class VeggieHit : MonoBehaviour
 
     private bool IsTriggered = false;
 
+    AudioSource VeggieSound;
+
     private void Start()
     {
+        VeggieSound = GetComponent<AudioSource>();
         scoreManager = GameObject.Find("ScoreManager");
         ScoreMan = (ScoreManager)scoreManager.GetComponent(typeof(ScoreManager));
     }
@@ -46,6 +49,7 @@ public class VeggieHit : MonoBehaviour
                 Destroy(gameObject, 2.0f);
                 ScoreMan.IncreaseScore();
                 Instantiate(veggieExplosion, this.gameObject.transform.position, Quaternion.identity);
+                VeggieSound.Play();
             }
             else
             {

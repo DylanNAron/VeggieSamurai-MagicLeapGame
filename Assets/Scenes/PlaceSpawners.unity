@@ -504,6 +504,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 341910558}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &341910560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1011244501761250, guid: 24158fb1437dc8e418d893939758764d,
+    type: 3}
+  m_PrefabInstance: {fileID: 341910558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &341910561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341910560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1482117547, guid: 76117edccecfa334bbc1ceb13d2b649f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EnableMagicVerse: 0
+  m_ControlLF: 200
+  m_ControlMF: 1000
+  m_ControlHF: 5000
+  m_RoomGain: 1
+  m_ReflectionsGain: 0.24999999
+  m_ReflectionsDelay: 0.01
+  m_ReverbGain: 0.16
+  m_ReverbDelay: 0.03
+  m_ReverbDecayTime: 0.7
+  m_ReverbDecayLFRatio: 1
+  m_ReverbDecayHFRatio: 0.6
 --- !u!1 &402879931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,7 +1608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c09d7bb5f3cb47eb9cb67466bc06de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawners: {fileID: 63014221}
   spawnerUI: {fileID: 402879931}
   spawnerRaycastvisualizer: {fileID: 234904008}
 --- !u!1 &1734083945
