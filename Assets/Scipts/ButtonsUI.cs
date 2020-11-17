@@ -6,11 +6,14 @@ using UnityEngine.SceneManagement;
 public class ButtonsUI : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject spawners;
-    private AsyncOperation sceneAsync;
+    //public GameObject spawners;
+    //private AsyncOperation sceneAsync;
 
     public GameObject spawnerUI;
     public GameObject spawnerRaycastvisualizer;
+
+    private GameObject[] spawners;
+
 
     public void SpawnerPlaceStart()
     {
@@ -18,6 +21,20 @@ public class ButtonsUI : MonoBehaviour
         //StartCoroutine(loadScene(1));
         SceneManager.LoadScene(1);
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+        spawners = GameObject.FindGameObjectsWithTag("Spawner");
+        foreach (GameObject spawner in spawners)
+        {
+            Destroy(spawner);
+            Debug.Log("Spawners destroyed");
+        }
+
+    }
+
+    /*
 
     IEnumerator loadScene(int index)
     {
@@ -59,4 +76,6 @@ public class ButtonsUI : MonoBehaviour
             SceneManager.UnloadScene(0);
         }
     }
+
+    */
 }

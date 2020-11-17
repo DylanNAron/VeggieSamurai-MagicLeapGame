@@ -94,6 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73b416bcc4d549daa6214d7046f51a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  veggieExplosion: {fileID: 2921662480502385468, guid: 115ee7d90aa1242c0a1ad95cfb0b2742,
+    type: 3}
 --- !u!135 &8930899633738702553
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -102,7 +104,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416883380620996039}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 9.6817
