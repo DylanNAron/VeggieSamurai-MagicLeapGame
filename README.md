@@ -1,11 +1,16 @@
-# Magic Leap Unity Project - Veggie Samurai
+# Veggie Samurai - Magic Leap Unity Project
 
+In Game Screen shots
 
 ![Sword](https://github.com/DylanNAron/VeggieSamurai-MagicLeapGame/blob/master/3.png)
 
 ![Sword](https://github.com/DylanNAron/VeggieSamurai-MagicLeapGame/blob/master/2.png)
 
 ![Sword](https://github.com/DylanNAron/VeggieSamurai-MagicLeapGame/blob/master/1.png)
+
+## Description
+
+Slice veggies as a samurai inside your room by utilizing the capabilities of XR spatial meshing, spatial audio, & raycasting!
 
 ## Project
 
