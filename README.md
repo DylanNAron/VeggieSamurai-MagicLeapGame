@@ -1,9 +1,7 @@
-### Veggie Samurai XR Game
-# [Video Demonstration](https://youtu.be/Bh1CD7OJ4yo)
-
 # Veggie Samurai - Magic Leap Unity Project
+## [Video Demonstration](https://youtu.be/Bh1CD7OJ4yo)
 
-In Game Screen shots
+### In Game Screen shots
 
 ![Sword](https://github.com/DylanNAron/VeggieSamurai-MagicLeapGame/blob/master/3.png)
 
